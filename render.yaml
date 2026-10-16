@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ytdlp-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: YTDLP_TOKEN
+        sync: false
